@@ -4,18 +4,16 @@ declare(strict_types=1);
 
 namespace Mos\Router;
 
-use function Mos\Functions\{
-    destroySession,
-    redirectTo,
-    renderView,
-    renderTwigView,
-    sendResponse,
-    url,
-    initGame21,
-    buttonRoll,
-    buttonStop,
-    buttonReset
-};
+use function Mos\Functions\destroySession;
+use function Mos\Functions\redirectTo;
+use function Mos\Functions\renderView;
+use function Mos\Functions\renderTwigView;
+use function Mos\Functions\sendResponse;
+use function Mos\Functions\url;
+use function Mos\Functions\initGame21;
+use function Mos\Functions\buttonRoll;
+use function Mos\Functions\buttonStop;
+use function Mos\Functions\buttonReset;
 
 /**
  * Class Router.

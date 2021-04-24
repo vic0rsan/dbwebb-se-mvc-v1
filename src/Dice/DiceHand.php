@@ -6,14 +6,13 @@ namespace gusu20\Dice;
 
 class DiceHand
 {
-    private array $dicesObj;
-    private array $dicesValue;
-    private array $dicesGraphic;
+    private $dicesObj = [];
+    private $dicesValue = [];
+    private $dicesGraphic = [];
 
     public function __construct(int $dices = 1)
     {
-        for ($i = 0; $i < $dices; $i++)
-        {
+        for ($i = 0; $i < $dices; $i++) {
             $this->dicesObj[$i] = new GraphicalDice();
         }
     }
@@ -21,8 +20,7 @@ class DiceHand
     public function rollDices()
     {
         $dices = count($this->dicesObj);
-        for ($i = 0; $i < $dices; $i++)
-        {
+        for ($i = 0; $i < $dices; $i++) {
             $this->dicesObj[$i]->roll();
         }
     }
@@ -30,8 +28,7 @@ class DiceHand
     public function getDicesValue()
     {
         $dices = count($this->dicesObj);
-        for ($i = 0; $i < $dices; $i++)
-        {
+        for ($i = 0; $i < $dices; $i++) {
             $this->dicesValue[$i] = $this->dicesObj[$i]->getLastRoll();
         }
         return $this->dicesValue;
@@ -40,8 +37,7 @@ class DiceHand
     public function getDicesGraphic()
     {
         $dices = count($this->dicesObj);
-        for ($i = 0; $i < $dices; $i++)
-        {
+        for ($i = 0; $i < $dices; $i++) {
             $this->dicesGraphic[$i] = $this->dicesObj[$i]->dicesGraphic();
         }
         return $this->dicesGraphic;

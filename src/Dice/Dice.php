@@ -7,7 +7,7 @@ namespace gusu20\Dice;
 class Dice
 {
     private $faces;
-    private int $lastRoll;
+    private $lastRoll;
 
     public function __construct(int $faces = 6)
     {

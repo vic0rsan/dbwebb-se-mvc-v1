@@ -224,8 +224,7 @@ function initGame21() : void
 
 function buttonRoll() : void
 {
-    if (!$_SESSION["stop"] && $_SESSION["playerSum"] < 21)
-    {
+    if (!$_SESSION["stop"] && $_SESSION["playerSum"] < 21) {
         $player = new DiceHand($_SESSION["diceAmount"]);
         $player->rollDices();
         $player->getDicesValue();
@@ -234,12 +233,10 @@ function buttonRoll() : void
         $dices = $player->getDicesGraphic();
         $_SESSION["playerDices"] = $dices;
 
-        if ($_SESSION["playerSum"] == 21)
-        {
+        if ($_SESSION["playerSum"] == 21) {
             $_SESSION["stats"] = "Du vann!";
             $_SESSION["playerWins"] += 1;
-        } else if ($_SESSION["playerSum"] > 21)
-        {
+        } else if ($_SESSION["playerSum"] > 21) {
             $_SESSION["stats"] = "Datorn vann!";
             $_SESSION["comWins"] += 1;
         }
@@ -249,23 +246,19 @@ function buttonRoll() : void
 function buttonStop(): void
 {
     $_SESSION["stop"] = true;
-    while ($_SESSION["comSum"] < $_SESSION["playerSum"])
-    {
+    while ($_SESSION["comSum"] < $_SESSION["playerSum"]) {
         $com = new DiceHand($_SESSION["diceAmount"]);
         $com->rollDices();
         $com->getDicesValue();
         $_SESSION["comSum"] += $com->getDiceSum();
 
-        if($_SESSION["comSum"] > $_SESSION["playerSum"] && $_SESSION["comSum"] < 21 || $_SESSION["comSum"] == 21)
-        {
+        if ($_SESSION["comSum"] > $_SESSION["playerSum"] && $_SESSION["comSum"] < 21 || $_SESSION["comSum"] == 21) {
             $_SESSION["comWins"] += 1;
             $_SESSION["stats"] = "Datorn vann!";   
-        } else if($_SESSION["comSum"] > 21)
-        {
+        } else if ($_SESSION["comSum"] > 21) {
             $_SESSION["stats"] = "Du vann!";
             $_SESSION["playerWins"] += 1;
-        } else if ($_SESSION["playerSum"] == $_SESSION["comSum"])
-        {
+        } else if ($_SESSION["playerSum"] == $_SESSION["comSum"]) {
             $_SESSION["stats"] = "Oavgjort!";
         }
     }
