@@ -28,7 +28,7 @@ use function Mos\Functions\url;
         <a href="<?= url("/some/where") ?>">some/where</a> |
         <a href="<?= url("/no/such/path") ?>">Show 404 example</a> |
         <a href="<?= url("/form/view") ?>">Form view</a> |
-        <a href="<?= url("/game21start") ?>">Game 21</a>
+        <a href="<?= url("/game21/init") ?>">Game 21</a>
     </nav>
 </header>
 <main>
