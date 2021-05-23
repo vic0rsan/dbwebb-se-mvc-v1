@@ -7,8 +7,6 @@ namespace Mos\Functions;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
 
-use gusu20\Dice\DiceHand;
-
 /**
  * Functions.
  */

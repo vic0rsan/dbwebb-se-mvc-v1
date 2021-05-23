@@ -47,4 +47,14 @@ class DiceHand
     {
         return array_sum($this->dicesValue);
     }
+
+    public function setLastRoll()
+    {
+        $slots = $_SESSION["slots"];
+        $values = $_SESSION["values"];
+        $dices = count($slots);
+        for ($i = 0; $i < $dices; $i++) {
+            $this->dicesObj[(int)$slots[$i]]->setLastRoll($values[(int)$slots[$i]]);
+        }
+    }
 }

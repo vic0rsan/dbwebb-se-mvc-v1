@@ -1,28 +1,141 @@
 
-FILE: ...e/gustaf/git/dbwebb-kurser/mvc/me/game/src/Controller/Game21.php
+FILE: /home/gustaf/git/dbwebb-kurser/mvc/me/game/view/yatzy.php
 ----------------------------------------------------------------------
-FOUND 5 ERRORS AFFECTING 5 LINES
+FOUND 5 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
-   9 | ERROR | [x] Header blocks must be separated by a single blank
-     |       |     line
-  67 | ERROR | [x] There must not be a space before the colon in a
-     |       |     return type declaration
-  84 | ERROR | [x] Whitespace found at end of line
- 103 | ERROR | [x] Whitespace found at end of line
- 117 | ERROR | [x] There must not be a space before the colon in a
-     |       |     return type declaration
+  7 | ERROR | [x] Header blocks must be separated by a single blank
+    |       |     line
+ 17 | ERROR | [x] Expected 0 spaces before closing bracket; 1 found
+ 25 | ERROR | [x] Expected 0 spaces before closing bracket; 1 found
+ 42 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 42 | ERROR | [x] Inline control structures are not allowed
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
-FILE: /home/gustaf/git/dbwebb-kurser/mvc/me/game/src/functions.php
+FILE: ...gustaf/git/dbwebb-kurser/mvc/me/game/src/Controller/YatzyCon.php
 ----------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 4 ERRORS AFFECTING 4 LINES
 ----------------------------------------------------------------------
- 8 | ERROR | [x] Header blocks must not contain blank lines
+  8 | ERROR | [x] Header blocks must be separated by a single blank
+    |       |     line
+ 11 | ERROR | [x] Header blocks must be separated by a single blank
+    |       |     line
+ 12 | ERROR | [ ] Similar statements must be grouped together inside
+    |       |     header blocks; the first "use" statement was found
+    |       |     on line 7
+ 43 | ERROR | [x] Whitespace found at end of line
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: ...ustaf/git/dbwebb-kurser/mvc/me/game/src/Controller/Game21Con.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+----------------------------------------------------------------------
+ 13 | ERROR | [ ] Similar statements must be grouped together inside
+    |       |     header blocks; the first "use" statement was found
+    |       |     on line 7
+ 70 | ERROR | [x] There must not be a space before the colon in a
+    |       |     return type declaration
 ----------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /home/gustaf/git/dbwebb-kurser/mvc/me/game/src/Dice/Yatzy.php
+----------------------------------------------------------------------
+FOUND 44 ERRORS AFFECTING 41 LINES
+----------------------------------------------------------------------
+  9 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 10 | ERROR | [x] Line indented incorrectly; expected at least 4
+    |       |     spaces, found 2
+ 11 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 12 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 14 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 15 | ERROR | [x] Line indented incorrectly; expected at least 4
+    |       |     spaces, found 2
+ 16 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 17 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 18 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 19 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 20 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 21 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 22 | ERROR | [x] Whitespace found at end of line
+ 23 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 23 | ERROR | [x] Function closing brace must go on the next line
+    |       |     following the body; found 1 blank lines before
+    |       |     brace
+ 24 | ERROR | [x] Whitespace found at end of line
+ 25 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 26 | ERROR | [x] Line indented incorrectly; expected at least 4
+    |       |     spaces, found 2
+ 27 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 28 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 29 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found
+    |       |     4
+ 30 | ERROR | [x] Line indented incorrectly; expected at least 12
+    |       |     spaces, found 6
+ 31 | ERROR | [x] Line indented incorrectly; expected at least 12
+    |       |     spaces, found 6
+ 32 | ERROR | [x] Line indented incorrectly; expected at least 12
+    |       |     spaces, found 6
+ 33 | ERROR | [x] Line indented incorrectly; expected at least 12
+    |       |     spaces, found 6
+ 34 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found
+    |       |     4
+ 35 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 37 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+ 38 | ERROR | [x] Line indented incorrectly; expected at least 4
+    |       |     spaces, found 2
+ 39 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 40 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 41 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 42 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 43 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 44 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found
+    |       |     4
+ 45 | ERROR | [x] Line indented incorrectly; expected 12 spaces,
+    |       |     found 6
+ 46 | ERROR | [x] Line indented incorrectly; expected at least 16
+    |       |     spaces, found 8
+ 47 | ERROR | [x] Line indented incorrectly; expected 12 spaces,
+    |       |     found 6
+ 48 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found
+    |       |     4
+ 49 | ERROR | [x] Line indented incorrectly; expected at least 8
+    |       |     spaces, found 4
+ 50 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found
+    |       |     4
+ 50 | ERROR | [x] Newline required after opening brace
+ 50 | ERROR | [x] Closing brace must be on a line by itself
+ 51 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found
+    |       |     2
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 44 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
@@ -35,5 +148,17 @@ FOUND 1 ERROR AFFECTING 1 LINE
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
-Time: 123ms; Memory: 6MB
+
+FILE: /home/gustaf/git/dbwebb-kurser/mvc/me/game/src/Dice/Game21.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 14 | ERROR | [x] Opening brace should be on a new line
+ 31 | ERROR | [x] Opening brace should be on a new line
+ 40 | ERROR | [x] Whitespace found at end of line
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+Time: 137ms; Memory: 6MB
 

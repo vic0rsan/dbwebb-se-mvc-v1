@@ -24,4 +24,9 @@ class Dice
     {
         return $this->lastRoll;
     }
+
+    public function setLastRoll($value)
+    {
+        $this->lastRoll = $value;
+    }
 }

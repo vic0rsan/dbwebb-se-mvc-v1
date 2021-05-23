@@ -36,10 +36,16 @@ $router->addGroup("/form", function (RouteCollector $router) {
 });
 
 $router->addGroup("/game21", function (RouteCollector $router) {
-    $router->addRoute("GET", "/init", ["\Mos\Controller\Game21", "init"]);
-    $router->addRoute("POST", "/process", ["\Mos\Controller\Game21", "process"]);
-    $router->addRoute("GET", "/play", ["\Mos\Controller\Game21", "play"]);
-    $router->addRoute("POST", "/roll", ["\Mos\Controller\Game21", "buttonRoll"]);
-    $router->addRoute("POST", "/stop", ["\Mos\Controller\Game21", "buttonStop"]);
-    $router->addRoute("POST", "/reset", ["\Mos\Controller\Game21", "buttonReset"]);
+    $router->addRoute("GET", "/init", ["\Mos\Controller\Game21Con", "init"]);
+    $router->addRoute("POST", "/process", ["\Mos\Controller\Game21Con", "process"]);
+    $router->addRoute("GET", "/play", ["\Mos\Controller\Game21Con", "play"]);
+    $router->addRoute("POST", "/roll", ["\Mos\Controller\Game21Con", "buttonRoll"]);
+    $router->addRoute("POST", "/stop", ["\Mos\Controller\Game21Con", "buttonStop"]);
+    $router->addRoute("POST", "/reset", ["\Mos\Controller\Game21Con", "buttonReset"]);
+});
+
+$router->addGroup("/yatzy", function (RouteCollector $router) {
+    $router->addRoute("GET", "/play", ["\Mos\Controller\YatzyCon", "play"]);
+    $router->addRoute("POST", "/roll", ["\Mos\Controller\YatzyCon", "buttonRoll"]);
+    $router->addRoute("POST", "/reset", ["\Mos\Controller\YatzyCon", "buttonReset"]);
 });

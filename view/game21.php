@@ -7,7 +7,6 @@
 declare(strict_types=1);
 
 use function Mos\Functions\url;
-use function Mos\Functions\buttonRoll;
 
 $actionRoll = url("/game21/roll");
 $actionStop = url("/game21/stop");
